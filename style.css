@@ -1,0 +1,246 @@
+*{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+}
+ul li:not(:last-child){
+    margin-right: 10px;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+}
+nav .nav-links{
+    width: 50%;
+    padding: 2rem;
+}
+ul.nav-links li a{
+    font-size: 1.3em;
+    opacity: 0.75;
+    color: #000;
+}
+ul.nav-links li .apps{
+    opacity: 1;
+}
+.gb_Ve{
+    height: 24px;
+    width: 24px;
+    fill: #5f6368;
+    vertical-align: middle;
+    opacity: 1;
+}
+ul.nav-links li button{
+    padding:0  1.1rem;    
+    color: #fff;
+    font-size: 1.3rem;
+    background-image: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    border-radius: 4px;
+    line-height: 27px;
+    font-weight: bold;
+    margin-right: .8rem;
+}
+.right{
+    text-align: right;
+}
+main{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+main .logo-img img{
+    width: 27rem;
+}
+.QCzoEc {
+    fill: #909396;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+.goxjub {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-left: auto;
+}
+.search-form input{
+    height: 4.5rem;
+    width: 50rem;
+    outline: none;
+    border: none;
+    color:rgba(0,0,0,.87);
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0 1rem;
+}
+.search-box{
+    height: 4.5rem;
+    width: 50rem;
+    border-radius: 4rem;
+    outline: none;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 0 1rem;
+}
+.option-btns{
+    margin-top: 3rem;
+}
+.option-btns button{
+    padding:.5rem  1.5rem;    
+    color: #5F6368;
+    font-size: 14px;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    line-height: 27px;
+    margin-right: .8rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f2f2;
+}
+.footer-links{
+    padding: 2rem 2rem;
+}
+.footer-links.right{
+    margin-left: auto;
+}
+.footer-links ul li a{
+
+    color: #5f6368;
+    font-size: 1.4rem;
+}
+/* END INDEX PAGE */
+/* SEARCH RESULT PAGE */
+.nav-svg{
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+}
+.top-div{
+    padding: 3rem;
+}
+.left-shift{
+    left: 10%;
+    top:0;
+    transform: none;
+}
+ul.nav-links.top-nav li a{
+    font-size: 1.4em;
+}
+.top-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-logo img{
+width: 10rem;
+}
+.top-div .right{
+    margin-left: auto;
+}
+.top-div .search-box{
+    margin-top: 0;
+    margin-left: 2rem;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+.top-div .search-box svg{
+    margin-left: 1.5rem;
+}
+
+.top-div input{
+    height: 3rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-right: 1px solid #909396;
+    color:rgba(0,0,0,.87);
+    font-size: 16px;
+    line-height: 34px;
+    padding-left: .5rem;
+}
+.search-page{
+    position: relative;
+}
+main.search-page{
+    padding: 0 2.2rem;
+    text-align: left;
+}
+p.faint-text{
+    line-height: 4.3rem;
+}
+.faint-text{
+    font-size: 1.4rem;
+    color: #70757a;
+}
+header.search-page{
+    border-bottom: 1px solid #ebebeb;
+}
+header.search-page .nav-links{
+    /* padding: 0; */
+}
+
+header.search-page nav .nav-links li{
+    padding: 2rem 0;
+}
+header.search-page nav .nav-links li:first-child{
+    content: " ";
+    border-bottom: 4px solid #1a73e8;
+}
+@media screen  and (max-width: 500px){
+    body{
+        width: 100%;
+    }
+    nav .nav-links{
+        width: 100%;
+    }
+    nav .nav-links.left{
+        display: none;
+    }
+    
+    .search-form input{
+        width: 100%;
+    }
+    .search-form .search-box{
+        width: 100%;
+    }
+    .option-btns button:not(:last-child){
+        margin-bottom: 1rem;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links{
+        padding: 2rem 2rem;
+    }
+    .footer-links.right{
+        margin-left: 0;
+    }
+}
